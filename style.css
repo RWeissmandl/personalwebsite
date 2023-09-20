@@ -1,7 +1,7 @@
 body {
     font-family: Helvetica, sans-serif, Arial
 }
-header {
+.landingheader {
     height: 100vh;
     display: flex;
     flex-direction: column;
@@ -18,4 +18,14 @@ header {
     font-family: serif;
     font-size: 4em;
 }
-
+.headerlinks {
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    color:antiquewhite;
+    border-radius: 5px;
+    border-width: 1cm;
+}
+#contactinfo {
+    color: antiquewhite;
+    font-size:xx-large;
+    
+}

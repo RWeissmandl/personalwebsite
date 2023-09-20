@@ -18,11 +18,30 @@ body {
     font-family: serif;
     font-size: 4em;
 }
-.headerlinks {
-    font-family: Verdana, Geneva, Tahoma, sans-serif;
-    color:antiquewhite;
+
+.webpages {
+    margin-top: 30px;
+    padding: 1rem 2rem;
+    text-align: center;
+    background-color: aliceblue;
+    opacity: 90%;
+    border-radius: 1000px;
+}
+
+.webpages li {
+    display: inline;
+    margin-right: 15px;
+    
+}
+
+.website_pages {
+    font-family: Roboto, sans-serif, arial;
+    font-size: 16px;
+    font-weight: 300;
+    color: rgb(63, 57, 57);
     border-radius: 5px;
     border-width: 1cm;
+    text-decoration: none;
 }
 .contactinfo {
     margin-top: 100px;
@@ -31,15 +50,7 @@ body {
     display: inline;
     margin-right: 10px;
 }
-
 .contactinfo img {
     width: 48px;
     height: 48px;
-}
-
-#CVlogo {
-    background-color: white;
-    border-radius: 100px;
-    padding: 10px;
-
 }

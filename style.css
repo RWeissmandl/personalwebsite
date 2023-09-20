@@ -24,8 +24,22 @@ body {
     border-radius: 5px;
     border-width: 1cm;
 }
-#contactinfo {
-    color: antiquewhite;
-    font-size:xx-large;
-    
+.contactinfo {
+    margin-top: 100px;
+}
+.contactinfo li {
+    display: inline;
+    margin-right: 10px;
+}
+
+.contactinfo img {
+    width: 48px;
+    height: 48px;
+}
+
+#CVlogo {
+    background-color: white;
+    border-radius: 100px;
+    padding: 10px;
+
 }

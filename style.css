@@ -13,6 +13,7 @@ body {
     background-position: bottom;
     color: whitesmoke;
     font-weight: bold;
+    text-align: center;
 }
 #name {
     font-family: serif;
@@ -36,7 +37,7 @@ body {
 
 .website_pages {
     font-family: Roboto, sans-serif, arial;
-    font-size: 16px;
+    font-size: 1.1em;
     font-weight: 300;
     color: rgb(63, 57, 57);
     border-radius: 5px;
@@ -51,6 +52,6 @@ body {
     margin-right: 10px;
 }
 .contactinfo img {
-    width: 48px;
-    height: 48px;
+    width: 3em;
+    height: 3em;
 }

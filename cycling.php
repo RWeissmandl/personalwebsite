@@ -46,6 +46,18 @@
                 <p>No better way to experience the joys of a project's fruition, when it always reminds of the simple joys of cycling. I am learning to program by displaying my cycling activities. <a href="https://github.com/RWeissmandl/Pulling_Strava_Activities">Here is the code</a>.</p>
             </section>
           
+            <?php
+
+$db = parse_url(getenv("DATABASE_URL"));
+$db["path"] = ltrim($db["path"], "/");
+$db_connection = pg_connect("host=".$db["host"]." port=".$db["port"]." dbname=".$db["path"]." user=".$db["user"]." password=".$db["pass"]);
+$result = pg_query($db_connection, "SELECT * FROM activities");
+
+while ($row = pg_fetch_row($result)) {
+    echo $row[0].$row[1];
+    echo "<br />\n";
+  }  
+?>
         
 </body>
 

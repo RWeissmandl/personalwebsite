@@ -1,5 +1,6 @@
 body {
-    font-family: Helvetica, sans-serif, Arial
+    font-family: Helvetica, sans-serif, Arial;
+    margin: 0px;
 }
 .landingheader {
     height: 100vh;

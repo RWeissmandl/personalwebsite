@@ -51,13 +51,28 @@
 $db = parse_url(getenv("DATABASE_URL"));
 $db["path"] = ltrim($db["path"], "/");
 $db_connection = pg_connect("host=".$db["host"]." port=".$db["port"]." dbname=".$db["path"]." user=".$db["user"]." password=".$db["pass"]);
-$result = pg_query($db_connection, "SELECT * FROM activities");
+$result = pg_query($db_connection, "select * from activities where (Sport_type='Ride' and Distance > 44) OR (Sport_type='Run' and Distance > 6) or (Sport_type='Hike' and Distance > 10)");
 
-while ($row = pg_fetch_row($result)) {
-    echo $row[0].$row[1];
-    echo "<br />\n";
-  }  
+// while ($row = pg_fetch_array($result)) {
+// echo $row[0].$row[1].$row[2].$row[3].$row[4].$row[5].$row[6].$row[7].$row[8];
+// echo "<br />\n";
+// }  
+
 ?>
+
+    <?php
+        while($row = pg_fetch_row($result)) {
+           echo "<table>";
+            echo "<tr><td>$row[0]</td></tr>";
+            echo "<tr><td>$row[6]</td></tr>";
+            echo "<tr><td>$row[1]miles</td></tr>";
+            echo "<tr><td>$row[2]seconds</td></tr>";
+            echo "<tr><td>$row[3]meters</td></tr>";
+            echo "<tr><td>$row[8]average speed</td></tr>";
+            echo "<tr><td>$row[7]</td></tr>";
+            echo "</table>";
+        }
+        ?>    
         
 </body>
 

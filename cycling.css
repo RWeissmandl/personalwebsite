@@ -42,14 +42,16 @@ main {
     margin-right: 2em; 
 }
 
-
-
 h1 {
     font-size: 2.4em;
     font-weight: 300;
-    font-family:'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif
+    font-family:'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
     text-align: center;
     margin-top: 0.5em;
 }
 
-h2 
+#map {
+    height: 280px;
+    width: 40%;
+    margin: 0 auto;
+}

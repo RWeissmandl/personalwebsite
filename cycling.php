@@ -58,11 +58,10 @@
     let polyline = L.Polyline.fromEncoded(encodedMapString); //getting the summary polyline string and converting to lat/long
     let coordinates = L.Polyline.fromEncoded(encodedMapString).getLatLngs(); //storing above as lat/long
     let object_1 = polyline.getLatLngs()[0]; //grabbing fifth lat/long object
-    //let map = L.map('map').fitBounds(coordinates); //initialising map
     let map = L.map(varName).fitBounds(coordinates); //initialising map
-    L.tileLayer('https://tile.openstreetmap.org/{z}/{x}/{y}.png', {
+    L.tileLayer('https://tiles.stadiamaps.com/tiles/alidade_smooth/{z}/{x}/{y}{r}.png', {
     maxZoom: 19,
-    attribution: '&copy; <a href="https://www.openstreetmap.org/copyright">OpenStreetMap</a> contributors'
+    attribution: '&copy; <a href="https://www.openstreetmap.org/copyright">OpenStreetMap</a> contributors &copy; <a href="https://carto.com/attributions">CARTO</a>'
     }).addTo(map); //adding openstreetmap layer
     L.polyline(coordinates, {color:"red"}).addTo(map); //adding route to map
     // Adding popup with Name of Activity at starting point

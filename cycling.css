@@ -8,7 +8,7 @@ body {
     margin-top: 30px;
     padding: 1rem 2rem;
     text-align: center;
-    background-color: rgb(236, 240, 243);
+    background-color: rgb(231, 234, 238);
     opacity: 90%;
     border-radius: 10px;
 }
@@ -20,7 +20,7 @@ body {
 }
 
 .website_pages {
-    font-family: Roboto, sans-serif, arial;
+    font-family: roboto, sans-serif, arial;
     font-size: 1.3em;
     font-weight: 300;
     color: rgb(36, 43, 83);
@@ -80,12 +80,15 @@ h2 {
 
 dl {
     margin-bottom: 1em;
-    display: inline;
   }
 
 dt {
     padding-left: 10px;
     display:inline;
+}
+dt img {
+    width: 1em;
+    vertical-align: bottom;
 }
 
 dd {
@@ -93,12 +96,29 @@ dd {
     border-style: solid;
     border-color: rgb(172, 172, 172);
     padding-right: 10px;
-    font-weight: bold;
+    display: inline;
 }
 
 dd:last-child {
     border-right: 0px;
 }
+
+.hover {
+    display: none;
+}
+
+dt img:hover + .hover {
+    border: 1px;
+    border-width:1px;
+    padding: 0.3em;
+    border-color:black;
+    background-color: black;
+    border-radius: 10px;
+    font-size: small;
+    color: white;
+    display: inline;
+} 
+
 
 .map {
     height: 25em;

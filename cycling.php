@@ -90,13 +90,13 @@ while($row = pg_fetch_row($result)) {
     echo "<div id='activity'>
     <div id='activityTitle'> $activity_title</div>
     <dl>
-    <dt>Distance:</dt>
-    <dd> $row[1]mi</dd>
-    <dt>Moving Time:</dt>
+    <dt><img src='res/distanceicon.svg' alt='distance icon'><div class=hover>Distance</div></dt>
+    <dd> $row[1]mi</dd></div>
+    <dt><img src='res/movingtimeicon.svg' alt='distance icon'><div class=hover>Moving Time</div></dt>
     <dd> $row[2]</dd>
-    <dt>Elevation:</dt>
+    <dt><img src='res/elevationicon.svg' alt='distance icon'><div class=hover>Elevation</div></dt>
     <dd> $row[3]ft</dt>
-    <dt>Speed:</dt>
+    <dt><img src='res/speedicon.svg' alt='distance icon'><div class=hover>Average Speed</div></dt>
     <dd> $row[8]mph</dd>
     </dl>";
     $php_map = "$row[7]";

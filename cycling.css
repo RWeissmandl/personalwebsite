@@ -1,13 +1,14 @@
 
 body {
-    background-color: rgb(227, 234, 243);
+    background-color: rgb(233, 250, 252);
+    text-align: center;
 }
 
 .webpages {
     margin-top: 30px;
     padding: 1rem 2rem;
     text-align: center;
-    background-color: aliceblue;
+    background-color: rgb(236, 240, 243);
     opacity: 90%;
     border-radius: 10px;
 }
@@ -38,9 +39,9 @@ main {
     text-align: center;
     font-size: 1.3em;
     margin-top: auto;
-    margin-left: 2em;
-    margin-right: 2em; 
-}
+    margin-left: 3em;
+    margin-right: 3em; 
+} 
 
 h1 {
     font-size: 2.4em;
@@ -48,10 +49,60 @@ h1 {
     font-family:'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
     text-align: center;
     margin-top: 0.5em;
+    margin-bottom: 0.5em;
+}
+
+h2 {
+    font-size: 1.2em;
+    text-align: center;
+    margin-bottom: 1.5em;
+}
+
+#activity {
+    background-color: white;
+    padding: 2em 1.5em;
+    width: fit-content;
+    color: rgb(0, 0, 0);
+    margin: 0 auto;
+    box-shadow: 0 8px 24px rgba(13,13,18,.04);
+    border-radius: 4px;
+}
+
+#activityTitle {
+    margin-bottom: 1em;
+    font-size: x-large;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+}
+
+#date {
+    margin-top: 0.5em;
+}
+
+dl {
+    margin-bottom: 1em;
+    display: inline;
+  }
+
+dt {
+    padding-left: 10px;
+    display:inline;
+}
+
+dd {
+    border-right: 1px;
+    border-style: solid;
+    border-color: rgb(172, 172, 172);
+    padding-right: 10px;
+    font-weight: bold;
+}
+
+dd:last-child {
+    border-right: 0px;
 }
 
 .map {
     height: 25em;
     width: 40em;
     margin: 0 auto;
+    max-width: 100%;
 }

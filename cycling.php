@@ -5,7 +5,7 @@
     <title>cycling</title>
     <link rel="stylesheet" href="reset.css">
     <link rel="stylesheet" href="cycling.css">
-    <meta name="viewport" content="width=device-width, inital-scale=1">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Roboto&display=swap" rel="stylesheet">
@@ -50,8 +50,8 @@
         <main>
             <section>
                 <h1>Cycling</h1>
-                <h2>A single goal. A simple project. A budding engineer.</h2>
-                <p>No better way to experience the joys of a project's fruition, when it always reminds of the simple joys of cycling. I am learning to program by displaying my cycling activities. <a href="https://github.com/RWeissmandl/Pulling_Strava_Activities">Here is the code</a>.</p>
+                <h2>A single goal. A simple project. A budding engineer. <br> No better way to experience the joys of a project's fruition, when it always reminds of the simple joys of cycling. I am learning to program by displaying my cycling activities. 
+                <a href="https://github.com/RWeissmandl/Pulling_Strava_Activities">Here is the code</a>.</h2>
             </section>
 
 <script> function loadMap(encodedMapString, activityTitle, varName) {
@@ -83,22 +83,30 @@ $result = pg_query($db_connection, "select * from activities where (Sport_type='
 $x=0;
 
 while($row = pg_fetch_row($result)) {
-    echo "<table class='table'>";
     $activity_title = "$row[0]";
-    echo "<tr><td>Distance: $row[1]miles</td></tr>";
     $distance = "$row[1]";
-    echo "<tr><td>Moving Time: $row[2]</td></tr>";
     $moving_time = "$row[2]";
-    echo "<tr><td>Elevation: $row[3]feet</td></tr>";
-    echo "<tr><td>$row[8]mph</td></tr>";
-    echo "<tr><td>Date: $row[6]</td></tr>";
-    echo "</table>";
+    $date = "$row[6]";
+    echo "<div id='activity'>
+    <div id='activityTitle'> $activity_title</div>
+    <dl>
+    <dt>Distance:</dt>
+    <dd> $row[1]mi</dd>
+    <dt>Moving Time:</dt>
+    <dd> $row[2]</dd>
+    <dt>Elevation:</dt>
+    <dd> $row[3]ft</dt>
+    <dt>Speed:</dt>
+    <dd> $row[8]mph</dd>
+    </dl>";
     $php_map = "$row[7]";
     $escaped_php_map = str_replace('\\', '\\\\', $php_map);
-    echo "<div class='map' id=\"map$x\"></div>";
-    echo "<script>loadMap(\"$escaped_php_map\", \"$activity_title\", \"map$x\")</script>";
+    echo "<div class='map' id=\"map$x\"></div>
+    <script>loadMap(\"$escaped_php_map\", \"$activity_title\", \"map$x\")</script>";
     $x++;
-    echo "</br></br>";
+    echo "<div id='date'> $date</div>";
+    echo "</div>
+    </br></br>";
 }
 pg_close($db_connection); #CLOSE CONNECTION 
 ?>    

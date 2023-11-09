@@ -16,7 +16,6 @@ body {
 .webpages li {
     display: inline;
     margin-right: 15px;
-    
 }
 
 .website_pages {
@@ -92,18 +91,18 @@ dt img {
 }
 
 dd {
-    border-right: 1px;
+    /* border-right: 1px;
     border-style: solid;
     border-color: rgb(172, 172, 172);
-    padding-right: 10px;
+    padding-right: 10px; */
     display: inline;
 }
 
-dd:last-child {
+/* dd:last-child {
     border-right: 0px;
-}
+} */
 
-.hover {
+/* .hover {
     display: none;
 }
 
@@ -117,7 +116,7 @@ dt img:hover + .hover {
     font-size: small;
     color: white;
     display: inline;
-} 
+}  */
 
 
 .map {

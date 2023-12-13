@@ -19,8 +19,10 @@
      <script src="res/Polyline.encoded.js"></script>
 </head>
 
+<?php require_once('header.php'); ?>
+
 <body>
-        <header>
+        <!-- <header>
             <nav>
                 <ul class="webpages">
                     <li> 
@@ -46,12 +48,29 @@
                 </ul> 
                 </nav>
         
-        </header>
+        </header> -->
+    <div id='content'>
         <main>
             <section>
                 <h1>Cycling</h1>
-                <h2>A single goal. A simple project. A budding engineer. <br> No better way to experience the joys of a project's fruition, when it always reminds of the simple joys of cycling. I am learning to program by displaying my cycling activities. 
-                <a href="https://github.com/RWeissmandl/Pulling_Strava_Activities">Here is the code</a>.</h2>
+                <p class='intro'>
+                    This project combines my love for cycling and my desire to teach myself to code. 
+                    My goal was simply to pull any strava activity over 45miles onto a personal website. 
+                    I picked Python as the first program to learn. Along the way, I learnt about API’s 
+                    (Strava doesn’t make it too simple!), databases and SQL (I’m storing authentication tokens and strava data in postgreSQL in Heroku),
+                    HTML, CSS, JavaScript, PHP, domains and general awesome skills. I committed my code to Github
+                    <a href="https://github.com/RWeissmandl/Pulling_Strava_Activities">here</a>. 
+                    Below lies the completion of the project, a culmination of coding and cycling efforts. 
+                    I may be the only person to scroll down to see, but I figured that if 
+                    I want at least someone to scroll….I should pick something where I’d be the one. 
+                    <a href="#readmore">Read more</a>
+                    <div id='readmore' class='intro'> Moving to Cambridge seemed a great time to begin cycling – a cycling-friendly city, flat roads, a useful way to commute. 
+                    I was keen to improve fitness, this seemed a perfect way to do it. 
+                    My first bike was an old mountain bike, it was so heavy, I couldn’t cycle on it. 
+                    I quickly exchanged that for a hybrid, before realising that I’m a roadie at heart. 
+                    I still have my hybrid, onto my second road bike and planning to build my next myself. 
+                    I was lucky to be a member of CUCC (Cambridge University Cycling Club) once I got quick enough to join their easy rides.
+                </div></p>
             </section>
 
 <script> function loadMap(encodedMapString, activityTitle, varName) {
@@ -107,6 +126,7 @@ while($row = pg_fetch_row($result)) {
 pg_close($db_connection); #CLOSE CONNECTION 
 ?>    
 
+</div>
 </body>
 
 </html>

@@ -35,7 +35,7 @@
                 <b> Coming soon: </b> I am now working on setting up a page for these reviews. 
                 In the meantime, here is my own little home coffee setup.
                 </p>
-                <img src="res/coffeesetup.jpg" alt="coffee setup">
+                <img src="res/coffeesetup.jpeg" alt="coffee setup">
         </section>
     </div>
 </body>

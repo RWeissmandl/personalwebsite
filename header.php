@@ -13,10 +13,10 @@
     <nav>
         <ul class="header">
             <li><a href="#" class="links">Tech</a></li>
-            <li><a href="research.php" class="links">Research</a></li>
-            <li><a href="#" class="links">Education</a></li>
             <li><a href="cycling.php" class="links">Cycling</a></li>
+            <li><a href="research.php" class="links">Research</a></li>
             <li><a href="coffee.php" class="links">Coffee</a></li>
+            <!-- <li><a href="#" class="links">Contact</a></li> -->
         </ul> 
     </nav></div>
 </header>

@@ -1,0 +1,8 @@
+body {
+    background-image:url(res/coffeebackground.jpg); 
+    text-align: center;
+}
+
+.content img {
+    max-width: 700px;
+}

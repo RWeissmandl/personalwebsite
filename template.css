@@ -1,0 +1,89 @@
+/* header styling */
+body, .header {
+    margin: 0;
+    padding: 0;
+}
+
+header {
+    background-color: rgb(214, 215, 220);
+    height: 5.5em;
+    box-shadow: 0 8px 24px rgba(13,13,18,.04);
+}
+
+.container {
+    margin-right: 15%;
+    margin-left: 15%;
+    position:relative;
+    top:25px;
+}
+
+.logo {
+    text-decoration: none;
+    float: left;
+    font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+    color: black;
+    /* font-size: xx-large; */
+    font-size: 1.8em;
+    font-weight:bolder;
+    font-stretch: extra-expanded;
+    border: solid;
+    padding: 0.15em;
+    border-width: 0.08em;
+    /* box-shadow: 0 8px 24px rgba(13,13,18,.04); */
+}
+
+header ul {
+    float: right;
+}
+
+header li {
+    display: inline-block;
+    line-height: 3em;
+    margin-right: 2em;
+    font-size: large;
+    list-style-type: none;
+}
+
+.links {
+    font-family:system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif
+    font-size: 1em;
+    /* font-weight: bold; */
+    color: black;
+    text-decoration: none;
+}
+
+/* template styling */
+
+/* adding white box around all content */
+.content{
+    background-color: rgb(255, 255, 255);
+    padding: 1em;
+    width: fit-content;
+    margin: 9%;
+    box-shadow: 0 8px 24px rgba(13,13,18,.04);
+    border-radius: 4px;
+}
+
+main {
+    font-family: sans-serif;
+    font-size: 1.3em;
+    margin-top: auto;
+    margin-left: 3em;
+    margin-right: 3em; 
+} 
+
+ h1 {
+    font-size: 2.4em;
+    font-weight: 300;
+    font-family:'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    text-align: left;
+    margin-top: 0.5em;
+    margin-bottom: 0.25em;
+} 
+
+.intro {
+    font-size: 0.8em;
+    text-align: left;
+    margin-bottom: 2em;
+    line-height: 1.4em;
+}

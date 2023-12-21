@@ -31,7 +31,7 @@
                     <a href="cycling.php" class="website_pages" target="_blank">Cycling</a>
                 </li>
                 <li>
-                    <a href="#" class="website_pages" target="_blank">Coffee</a>
+                    <a href="coffee.php" class="website_pages" target="_blank">Coffee</a>
                </li>
             </ul> 
             </nav>

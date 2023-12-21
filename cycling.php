@@ -3,7 +3,7 @@
 
 <head>
     <title>cycling</title>
-    <link rel="stylesheet" href="reset.css">
+    <!-- <link rel="stylesheet" href="reset.css"> -->
     <link rel="stylesheet" href="cycling.css">
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <link rel="preconnect" href="https://fonts.googleapis.com">
@@ -19,6 +19,7 @@
      <script src="res/Polyline.encoded.js"></script>
 </head>
 
+<!-- including template header and styling -->
 <?php require_once('header.php'); ?>
 
 <body>
@@ -49,7 +50,7 @@
                 </nav>
         
         </header> -->
-    <div id='content'>
+    <div class='content'>
         <main>
             <section>
                 <h1>Cycling</h1>

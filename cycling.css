@@ -1,21 +1,10 @@
 
 body {
-    /* background-color: rgb(249, 250, 246); */
     background-image:url(res/cyclingbackground.jpg); 
     text-align: center;
 }
 
-#content{
-    background-color: rgb(255, 255, 255);
-    padding: 1em;
-    width: fit-content;
-    margin: 9%;
-    box-shadow: 0 8px 24px rgba(13,13,18,.04);
-    border-radius: 4px;
-}
-
-main {
-    text-align: center;
+/* main {
     font-family: sans-serif;
     font-size: 1.3em;
     margin-top: auto;
@@ -30,14 +19,14 @@ main {
     text-align: left;
     margin-top: 0.5em;
     margin-bottom: 0.25em;
-} 
+}  */
 
-.intro {
+/* .intro {
     font-size: 0.8em;
     text-align: left;
     margin-bottom: 2em;
     line-height: 1.4em;
-}
+} */
 
 #readmore {
     display:none;

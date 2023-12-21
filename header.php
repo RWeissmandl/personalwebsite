@@ -3,7 +3,7 @@
 
 <head>
     <!-- <title>Do I need a title?</title> -->
-    <link rel="stylesheet" href="header.css">
+    <link rel="stylesheet" href="template.css">
     <meta name="viewport" content="width=device-width, inital-scale=1">
 </head>
 
@@ -13,10 +13,10 @@
     <nav>
         <ul class="header">
             <li><a href="#" class="links">Tech</a></li>
-            <li><a href="#" class="links">Research</a></li>
+            <li><a href="research.php" class="links">Research</a></li>
             <li><a href="#" class="links">Education</a></li>
             <li><a href="cycling.php" class="links">Cycling</a></li>
-            <li><a href="#" class="links">Coffee</a></li>
+            <li><a href="coffee.php" class="links">Coffee</a></li>
         </ul> 
     </nav></div>
 </header>
